@@ -56,6 +56,13 @@ build_command=$(cat <<BUILD_CMD
     --enable-fpm \
     --enable-mbstring \
     --enable-pcntl \
+	--with-libxml \
+	--with-bz2 \
+	--with-dom \
+	--with-imap \
+	--with-imap-ssl \
+	--with-mcrypt \
+	--enable-ftp \
     --disable-debug \
     && make \
     && make install \
